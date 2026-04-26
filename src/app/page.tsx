@@ -24,6 +24,16 @@ const directions = [
     glow: '#FFF3A3',
   },
   {
+    id: 'D4',
+    name: 'The Trust',
+    href: '/d4',
+    palette: ['#1E4D2B', '#C49A2A', '#F4F6F3', '#2C2C2C'],
+    descriptor: 'Conservative, credential-driven, high-trust. Built for the SA commercial farmer.',
+    font: 'Source Serif 4',
+    fontFamily: 'var(--font-source-serif), Georgia, serif',
+    glow: '#C49A2A',
+  },
+  {
     id: 'D3',
     name: 'The Tech',
     href: '/d3',
@@ -58,7 +68,7 @@ export default function DirectionSelector() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl">
         {directions.map((d, i) => (
           <motion.div
             key={d.id}

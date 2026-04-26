@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { bricolage, dmSans, rethinkSans, playfair, plusJakarta } from '@/lib/fonts'
+import { bricolage, dmSans, rethinkSans, playfair, plusJakarta, sourceSerif, inter } from '@/lib/fonts'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${bricolage.variable} ${dmSans.variable} ${rethinkSans.variable} ${playfair.variable} ${plusJakarta.variable}`}
+      className={`${bricolage.variable} ${dmSans.variable} ${rethinkSans.variable} ${playfair.variable} ${plusJakarta.variable} ${sourceSerif.variable} ${inter.variable}`}
     >
       <body>{children}</body>
     </html>

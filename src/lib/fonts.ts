@@ -1,4 +1,4 @@
-import { Bricolage_Grotesque, DM_Sans, Rethink_Sans, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google'
+import { Bricolage_Grotesque, DM_Sans, Rethink_Sans, Playfair_Display, Plus_Jakarta_Sans, Source_Serif_4, Inter } from 'next/font/google'
 
 export const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
@@ -29,4 +29,16 @@ export const plusJakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
   weight: ['400', '600', '700', '800'],
   variable: '--font-jakarta',
+})
+
+export const sourceSerif = Source_Serif_4({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-source-serif',
+})
+
+export const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-inter',
 })

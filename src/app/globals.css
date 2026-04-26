@@ -27,6 +27,19 @@
   --d2-accent-text: #3A4526;
 }
 
+/* ─── Direction 4 — The Trust ─────────────────── */
+.d4-theme {
+  --d4-green:      #1E4D2B;
+  --d4-green-mid:  #2E6B3E;
+  --d4-gold:       #C49A2A;
+  --d4-bg:         #FFFFFF;
+  --d4-bg-alt:     #F4F6F3;
+  --d4-text:       #2C2C2C;
+  --d4-text-mid:   #5A5A5A;
+  --d4-border:     #D8DDD6;
+  --d4-nav-bg:     #1E4D2B;
+}
+
 /* ─── Direction 3 — The Tech ──────────────────── */
 .d3-theme {
   --d3-dark:        #1a1a18;

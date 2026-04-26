@@ -4,12 +4,13 @@ import { usePathname } from 'next/navigation'
 
 export default function DirectionSwitcher() {
   const pathname = usePathname()
-  const active = pathname.startsWith('/d1') ? 1 : pathname.startsWith('/d2') ? 2 : pathname.startsWith('/d3') ? 3 : 0
+  const active = pathname.startsWith('/d1') ? 1 : pathname.startsWith('/d2') ? 2 : pathname.startsWith('/d3') ? 3 : pathname.startsWith('/d4') ? 4 : 0
 
   const pills = [
     { num: 1, label: 'D1', href: '/d1', color: '#ecf96e', textColor: '#3f492a' },
     { num: 2, label: 'D2', href: '/d2', color: '#FFF3A3', textColor: '#3A4526' },
     { num: 3, label: 'D3', href: '/d3', color: '#A8C090', textColor: '#2C4128' },
+    { num: 4, label: 'D4', href: '/d4', color: '#C49A2A', textColor: '#fff' },
   ]
 
   return (
